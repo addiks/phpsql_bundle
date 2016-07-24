@@ -17,7 +17,7 @@ use Doctrine\DBAL\Platforms\MySqlPlatform;
 use Doctrine\DBAL\Schema\MySqlSchemaManager;
 use Doctrine\DBAL\Connection;
 use Addiks\PHPSQL\PDO\PDO;
-use Addiks\PHPSQLBundle\Doctrine\PHPSQLDoctrineConnection;
+use Addiks\PHPSQLBundle\Doctrine\Connection as PHPSQLConnection;
 
 class Driver implements DoctrineDriver
 {
