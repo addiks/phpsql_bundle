@@ -21,8 +21,8 @@
         "php": ">=5.3",
         "doctrine/dbal": "~2.5",
         "addiks/phpsql": "*",
-        "symfony/dependency-injection": "3.1",
-        "symfony/config": "3.1",
-        "symfony/http-kernel": "3.1"
+        "symfony/dependency-injection": "~3.1",
+        "symfony/config": "~3.1",
+        "symfony/http-kernel": "~3.1"
     }
 }
