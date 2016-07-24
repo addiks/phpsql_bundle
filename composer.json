@@ -14,8 +14,8 @@
     ],
 
     "autoload": {
-        "psr-0": {
-            "Addiks\\PHPSQLBundle":  "src/"
+        "psr-4": {
+            "Addiks\\PHPSQLBundle\\":  "src/"
         }
     },
 
