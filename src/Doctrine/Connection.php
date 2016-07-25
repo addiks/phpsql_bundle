@@ -41,8 +41,6 @@ class Connection implements DoctrineConnection
         /* @var $pdo PDO */
         $pdo = $this->pdo;
 
-        var_dump($prepareString);
-
         /* @var $statement PHPSQLInnerStatement */
         $statement = $pdo->prepare($prepareString);
 
@@ -63,8 +61,6 @@ class Connection implements DoctrineConnection
 
         /* @var $statementString string */
         $statementString = array_shift($parameters);
-
-        var_dump($statementString);
 
         /* @var $statement PHPSQLInnerStatement */
         $statement = $pdo->query($statementString, $parameters);
@@ -102,8 +98,6 @@ class Connection implements DoctrineConnection
     {
         /* @var $pdo PDO */
         $pdo = $this->pdo;
-
-        var_dump($statement);
 
         return $pdo->exec($statement);
     }

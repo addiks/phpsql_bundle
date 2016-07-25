@@ -41,8 +41,6 @@ class Driver implements DoctrineDriver
                 $dbname = $params['dbname'];
             }
 
-            var_dump("NEW CONNECTION");
-
             $pdo = new PDO("inmemory:{$dbname}");
 
             $conn = new PHPSQLConnection($pdo);
