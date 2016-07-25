@@ -17,7 +17,7 @@ use Doctrine\DBAL\Platforms\MySqlPlatform;
 use Doctrine\DBAL\Schema\MySqlSchemaManager;
 use Doctrine\DBAL\Connection;
 use Addiks\PHPSQL\PDO\PDO;
-use Addiks\PHPSQLBundle\Doctrine\PHPSQLDoctrineConnection;
+use Addiks\PHPSQLBundle\Doctrine\Connection as PHPSQLBundleConnection;
 
 class Driver implements DoctrineDriver
 {
@@ -45,7 +45,7 @@ class Driver implements DoctrineDriver
 
             $pdo = new PDO("inmemory:{$dbname}");
 
-            $conn = new PHPSQLConnection($pdo);
+            $conn = new PHPSQLBundleConnection($pdo);
 
         } catch (PDOException $e) {
             throw DBALException::driverException($this, $e);

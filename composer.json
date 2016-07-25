@@ -1,7 +1,7 @@
 {
     "name":         "addiks/phpsql-bundle",
     "description":  "Symfony/Doctrine bundle to integrate phpsql",
-    "keywords":     ["sql", "database", "php"],
+    "keywords":     ["sql", "database", "php", "symfony", "doctrine"],
     "homepage":     "http://addiks.net/phpsql",
     "type":         "library",
     "license":      "GPL-3.0",
@@ -14,15 +14,15 @@
     ],
 
     "autoload": {
-        "psr-4": { "Addiks\\PHPSQLBundle\\": "" }
+        "psr-4": { "Addiks\\PHPSQLBundle\\": "src/" }
     },
 
     "require": {
         "php": ">=5.3",
         "doctrine/dbal": "~2.2",
         "addiks/phpsql": "*",
-        "symfony/dependency-injection": "2.6",
-        "symfony/config": "2.6",
-        "symfony/http-kernel": "2.6"
+        "symfony/dependency-injection": "~2.6",
+        "symfony/config": "~2.6",
+        "symfony/http-kernel": "~2.6"
     }
 }
