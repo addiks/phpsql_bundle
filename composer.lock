@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1927fabd1bfb7175582ec8d811a3c553",
-    "content-hash": "2ba1e8f39c8dc468a5348a1cd3fbb912",
+    "hash": "7506eb4418ab69b107d00ab10989354c",
+    "content-hash": "e8c8c701feaec5c7e059f417b95f7ea2",
     "packages": [
         {
             "name": "addiks/phpsql",
-            "version": "v0.3.0",
+            "version": "v0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/addiks/phpsql.git",
-                "reference": "0a7fc975475856f5697223dd41ed63e56574470f"
+                "reference": "af79ff551b716a711a5e364074a93efdbbd77cbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/addiks/phpsql/zipball/0a7fc975475856f5697223dd41ed63e56574470f",
-                "reference": "0a7fc975475856f5697223dd41ed63e56574470f",
+                "url": "https://api.github.com/repos/addiks/phpsql/zipball/af79ff551b716a711a5e364074a93efdbbd77cbd",
+                "reference": "af79ff551b716a711a5e364074a93efdbbd77cbd",
                 "shasum": ""
             },
             "require": {
@@ -56,7 +56,7 @@
                 "php",
                 "sql"
             ],
-            "time": "2016-05-06 19:00:29"
+            "time": "2016-11-14 14:23:25"
         },
         {
             "name": "doctrine/annotations",
