@@ -14,7 +14,7 @@ use Doctrine\DBAL\Driver\Connection as DoctrineConnection;
 use Doctrine\DBAL\Driver\Statement as DoctrineStatement;
 use Addiks\PHPSQL\PDO\PDO;
 use Addiks\PHPSQL\PDO\Statement as PHPSQLInnerStatement;
-use Addiks\PHPSQLBundle\Doctrine\Statement as PHPSQLStatement;
+use Addiks\PHPSQLBundle\Doctrine\Statement as PHPSQLBundleStatement;
 
 class Connection implements DoctrineConnection
 {
@@ -41,12 +41,10 @@ class Connection implements DoctrineConnection
         /* @var $pdo PDO */
         $pdo = $this->pdo;
 
-#        var_dump($prepareString);
-
         /* @var $statement PHPSQLInnerStatement */
         $statement = $pdo->prepare($prepareString);
 
-        return new PHPSQLStatement($statement);
+        return new PHPSQLBundleStatement($statement);
     }
 
     /**
@@ -64,12 +62,10 @@ class Connection implements DoctrineConnection
         /* @var $statementString string */
         $statementString = array_shift($parameters);
 
-#        var_dump($statementString);
-
         /* @var $statement PHPSQLInnerStatement */
         $statement = $pdo->query($statementString, $parameters);
 
-        return new PHPSQLStatement($statement);
+        return new PHPSQLBundleStatement($statement);
     }
 
     /**
@@ -102,8 +98,6 @@ class Connection implements DoctrineConnection
     {
         /* @var $pdo PDO */
         $pdo = $this->pdo;
-
-        var_dump($statement);
 
         return $pdo->exec($statement);
     }
